@@ -1,0 +1,6 @@
+samples: "config/samples.tsv"
+units: "config/units.tsv"
+
+# boolean if read trimming should be skipped
+trimming:
+  activate: false

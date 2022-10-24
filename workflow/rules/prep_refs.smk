@@ -51,3 +51,11 @@ rule bwa_index:
     cache: True
     wrapper:
         "0.45.1/bio/bwa/index"
+
+rule download_refs:
+    input:
+        vcf="resources/variation.vcf.gz",
+        genome= "resources/genome.fasta",
+        idx="resources/genome.fasta.fai"
+
+
